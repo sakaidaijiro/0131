@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実技試験</title>
+</head>
+<style>
+   
+    .countens {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: rgb(226, 208, 175);
+        justify-content: space-around;
+        width: 800px;
+        height: 200px;
+        text-align: center;
+        margin:  0 auto;
+        margin-top: 10px;
+    }
+
+    .text {
+        background-color: rgb(5, 5, 5);
+        color: #fff;
+        width: 800px;
+        height: 90px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main {
+        margin: 50px auto 50px auto;
+        box-sizing: border-box;
+        padding: 0 2%;
+        max-width: auto;
+        text-align: center;
+    }
+
+    .box {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .imgbox{
+        margin: 50px;
+        text-align: center;
+    }
+
+    .images img:hover {
+        transform: rotate(20deg);
+    }
+
+    .button {
+        background-color: #c0babe;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+    }
+    .b{
+        width: 100px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    p{
+        margin: 10px;
+    }
+    @media (max-width :767px) {
+        .contents {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+</style>
+
+
+<body>
+    <div class="countens">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <p>テキスト１</p>
+        <p>テキスト２</p>
+        <p>テキスト３</p>
+        <p>テキスト４</p>
+
+    </div>
+    <div class="text">文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+        文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミ
+    </div>
+
+    
+    <div class="imgbox">
+            <img src="img/kapi.webp" alt="カピバラ">
+        </div>
+        <main>
+           お名前：<input type="text" name="name">
+           <div>返信を希望する方はチェックしてください。<input type="checkbox" ></div> 
+            メッセージ：
+            <h1><input type="text" name="name" class="b"></h1>
+            <input type="submit" value="送信する">
+        </div>
+    </main>
+</body>
+
+</html>
